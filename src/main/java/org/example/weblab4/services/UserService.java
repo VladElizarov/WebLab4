@@ -1,7 +1,7 @@
-package org.example.demoweblab4.services;
+package org.example.weblab4.services;
 
-import org.example.demoweblab4.domain.User;
-import org.example.demoweblab4.repositories.UserRepository;
+import org.example.weblab4.domain.User;
+import org.example.weblab4.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -23,7 +23,7 @@ public class UserService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("Пользователь " + username + " не найден"));
+                .orElseThrow(() -> new UsernameNotFoundException("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ " + username + " РЅРµ РЅР°Р№РґРµРЅ"));
     }
 
     public boolean addUser(User user) {

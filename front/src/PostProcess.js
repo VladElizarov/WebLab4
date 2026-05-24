@@ -4,11 +4,12 @@ const api = {
     sendPoint: async (data) => {
         try {
             console.log(JSON.stringify({x: data.X, y: data.Y, r: data.radius}));
-            const response = await fetch('http://localhost:8081/api/points/save_point', {
+            const response = await fetch('/api/points/save_point', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                credentials: 'include',
                 body: JSON.stringify({x: data.X, y: data.Y, r: data.radius}),
             });
 
@@ -25,8 +26,9 @@ const api = {
 
     fetchPoints: async () => {
         try {
-            const res = await fetch('http://localhost:8081/api/points/all_points', {
+            const res = await fetch('/api/points/all_points', {
                 method: 'GET',
+                credentials: 'include',
             });
             if (!res.ok) {
                 throw new Error('Ошибка получения');
@@ -41,8 +43,9 @@ const api = {
 
     deletePoints: async () => {
         try {
-            const res = await fetch('http://localhost:8081/api/points/delete_points', {
+            const res = await fetch('/api/points/delete_points', {
                 method: 'DELETE',
+                credentials: 'include',
             });
             if (!res.ok) {
                 throw new Error('Ошибка удаления');

@@ -1,8 +1,8 @@
-package org.example.demoweblab4.repositories;
+package org.example.weblab4.repositories;
 
-import org.example.demoweblab4.domain.Coordinate;
-import org.example.demoweblab4.domain.Point;
-import org.example.demoweblab4.utils.DatabaseConnection;
+import org.example.weblab4.domain.Coordinate;
+import org.example.weblab4.domain.Point;
+import org.example.weblab4.utils.DatabaseConnection;
 import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;

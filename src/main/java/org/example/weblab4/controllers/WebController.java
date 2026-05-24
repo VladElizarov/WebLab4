@@ -1,4 +1,4 @@
-package org.example.demoweblab4.controllers;
+package org.example.weblab4.controllers;
 
 
 import org.springframework.stereotype.Controller;

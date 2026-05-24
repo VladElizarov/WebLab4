@@ -1,4 +1,4 @@
-package org.example.demoweblab4.utils;
+package org.example.weblab4.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

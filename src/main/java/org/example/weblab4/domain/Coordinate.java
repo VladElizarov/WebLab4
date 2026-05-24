@@ -1,4 +1,4 @@
-package org.example.demoweblab4.domain;
+package org.example.weblab4.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,3 +30,4 @@ public class Coordinate {
         return y;
     }
 }
+

@@ -1,8 +1,8 @@
-package org.example.demoweblab4.controllers;
+package org.example.weblab4.controllers;
 
-import org.example.demoweblab4.domain.Coordinate;
-import org.example.demoweblab4.domain.Point;
-import org.example.demoweblab4.services.PointService;
+import org.example.weblab4.domain.Coordinate;
+import org.example.weblab4.domain.Point;
+import org.example.weblab4.services.PointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,3 +39,4 @@ public class PointController {
         }
     }
 }
+

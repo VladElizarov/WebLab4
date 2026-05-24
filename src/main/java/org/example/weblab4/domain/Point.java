@@ -1,4 +1,4 @@
-package org.example.demoweblab4.domain;
+package org.example.weblab4.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

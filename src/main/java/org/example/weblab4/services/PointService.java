@@ -1,8 +1,8 @@
-package org.example.demoweblab4.services;
+package org.example.weblab4.services;
 
-import org.example.demoweblab4.domain.Coordinate;
-import org.example.demoweblab4.domain.Point;
-import org.example.demoweblab4.repositories.PointsRepository;
+import org.example.weblab4.domain.Coordinate;
+import org.example.weblab4.domain.Point;
+import org.example.weblab4.repositories.PointsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
